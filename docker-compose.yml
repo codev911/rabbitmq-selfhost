@@ -1,12 +1,12 @@
 version: '3'
 services:
-  rabbitmq:
+  app:
     image: rabbitmq:management
     volumes:
       - rabbitmq-data:/var/lib/rabbitmq
     ports:
-      - "5672:5672"
-      - "15672:15672"
+      - 5672:5672
+      - 15672:15672
     environment:
       RABBITMQ_DEFAULT_USER: ${USERNAME}
       RABBITMQ_DEFAULT_PASS: ${PASSWORD}
