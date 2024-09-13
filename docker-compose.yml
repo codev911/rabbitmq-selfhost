@@ -1,6 +1,6 @@
 version: '3'
 services:
-  rabbitmq:
+  app:
     image: rabbitmq:management
     hostname: rabbitmq-server
     volumes:
